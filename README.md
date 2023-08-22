@@ -1,6 +1,6 @@
 # Hi, my name is Rubén Bojórquez!
 
-Feel free to visit my portfolio and see my work: jrubenbjrqzo.web.app
+Feel free to visit my portfolio and see my work: [jrubenbjrqzo.web.app](jrubenbjrqzo.web.app)
 
 I am a passionate, creative, and detail-oriented UX/UI designer and web developer. My early interest in creative activities such as painting, drawing, and music led me to a career in Multimedia Production Engineering. My journey began in a startup, and I have solid foundations in programming, graphic design and 3D.
 
