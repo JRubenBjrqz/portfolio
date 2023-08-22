@@ -1,5 +1,85 @@
 /* You can add global styles to this file, and also import other style files */
 
+@font-face {
+    font-family: '15XXThin';
+    src: url(assets/fonts/NeueHaasDisplayXXThin.ttf);
+}
+
+@font-face {
+    font-family: '25XThin';
+    src: url(assets/fonts/NeueHaasDisplayXThin.ttf);
+}
+
+@font-face {
+    font-family: '35Thin';
+    src: url(assets/fonts/NeueHaasDisplayThin.ttf);
+}
+
+@font-face {
+    font-family: '45Light';
+    src: url(assets/fonts/NeueHaasDisplayLight.ttf);
+}
+
+@font-face {
+    font-family: '55Roman';
+    src: url(assets/fonts/NeueHaasDisplayRoman.ttf);
+}
+
+@font-face {
+    font-family: '65Medium';
+    src: url(assets/fonts/NeueHaasDisplayMediu.ttf);
+}
+
+@font-face {
+    font-family: '75Bold';
+    src: url(assets/fonts/NeueHaasDisplayBold.ttf);
+}
+
+@font-face {
+    font-family: '95Black';
+    src: url(assets/fonts/NeueHaasDisplayBlack.ttf);
+}
+
+@font-face {
+    font-family: '16XXThinItalic';
+    src: url(assets/fonts/NeueHaasDisplayXXThinItalic.ttf);
+}
+
+@font-face {
+    font-family: '26XThinItalic';
+    src: url(assets/fonts/NeueHaasDisplayXThinItalic.ttf);
+}
+
+@font-face {
+    font-family: '36XThinItalic';
+    src: url(assets/fonts/NeueHaasDisplayThinItalic.ttf);
+}
+
+@font-face {
+    font-family: '46LightItalic';
+    src: url(assets/fonts/NeueHaasDisplayLightItalic.ttf);
+}
+
+@font-face {
+    font-family: '56RomanItalic';
+    src: url(assets/fonts/NeueHaasDisplayRomanItalic.ttf);
+}
+
+@font-face {
+    font-family: '66MediumItalic';
+    src: url(assets/fonts/NeueHaasDisplayMediumItalic.ttf);
+}
+
+@font-face {
+    font-family: '76BoldItalic';
+    src: url(assets/fonts/NeueHaasDisplayBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: '96BlackItalic';
+    src: url(assets/fonts/NeueHaasDisplayBlackItalic.ttf);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,6 +89,7 @@
 body {
     background: #F0F0F0;
     color: #292929;
+    font-family: '55Roman', Tahoma, Geneva, Verdana, sans-serif;
 }
   
 @media (min-width: 768px) {
