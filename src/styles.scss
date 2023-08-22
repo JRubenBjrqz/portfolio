@@ -1,1 +1,88 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #F0F0F0;
+    color: #292929;
+}
+  
+@media (min-width: 768px) {
+    .h-33 {
+        height: 33% !important;
+    }
+}
+
+.h-34 {
+    height: 34% !important;
+}
+
+.h-67 {
+    height: 67% !important;
+}
+  
+.btn-xs, .btn-group-xs > .btn {
+    --bs-btn-padding-y: 0.2rem;
+    --bs-btn-padding-x: 1rem;
+    --bs-btn-font-size: 0.875rem;
+    --bs-btn-border-radius: 1rem;
+}
+
+.btn-portfolio {
+    color: #292929;
+    background: #FF69B4;
+}
+
+.btn-portfolio:hover {
+    color: #292929;
+    background: #FF47A3;
+}
+
+.btn-portfolio:focus {
+    color: #292929;
+    background: #FF47A3 !important;
+    border: solid 1px #FF47A3;
+}
+
+.btn-portfolio:active {
+    color: #292929;
+    background: #FF47A3;
+    border: solid 1px #FF47A3 !important;
+}
+
+.bs-icon {
+    --bs-icon-size: .75rem;
+    flex-shrink: 0;
+    font-size: var(--bs-icon-size);
+    width: calc(var(--bs-icon-size)*2);
+    height: calc(var(--bs-icon-size)*2);
+}
+
+.bs-icon.bs-icon-circle {
+    border-radius: 50%;
+}
+  
+.bs-icon-sm {
+    --bs-icon-size: 1rem;
+}
+  
+.bs-icon.bs-icon-portfolio {
+    color: #292929;
+    background: #FF69B4 !important;
+}
+
+.link-portfolio {
+    color: #292929;
+}
+
+.link-portfolio:hover {
+    color: #FF47A3;
+}
+
+.link-portfolio:hover .bs-icon-portfolio {
+    background: #FF47A3;
+}
