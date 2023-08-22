@@ -89,7 +89,7 @@
 body {
     background: #F0F0F0;
     color: #292929;
-    font-family: '55Roman', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: '45Light', Tahoma, Geneva, Verdana, sans-serif;
 }
   
 @media (min-width: 768px) {
@@ -167,3 +167,28 @@ body {
 .link-portfolio:hover .bs-icon-portfolio {
     background: #FF47A3;
 }
+
+.align-justify {
+    text-align: justify;
+}
+
+.fs-neue-45 {
+    font-family: '45Light', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fs-neue-55 {
+    font-family: '55Roman', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fs-neue-65 {
+    font-family: '65Medium', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fs-neue-66-italic {
+    font-family: '66MediumItalic', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fs-neue-75 {
+    font-family: '75Bold', Tahoma, Geneva, Verdana, sans-serif;
+}
+
