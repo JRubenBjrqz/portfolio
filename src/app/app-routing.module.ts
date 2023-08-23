@@ -11,6 +11,16 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
+  },
+  {
+    path: 'uxui',
+    loadChildren: () =>
+      import('./pages/ux-ui-designs/ux-ui-designs.module').then((m) => m.UxUiDesignsModule)
+  },
+  {
+    path: 'visual',
+    loadChildren: () =>
+      import('./pages/visual-designs/visual-designs.module').then((m) => m.VisualDesignsModule)
   }
 ];
 
