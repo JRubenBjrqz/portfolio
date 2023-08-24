@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-ux-ui-designs',
+  selector: 'ux-ui-designs',
   templateUrl: './ux-ui-designs.component.html',
   styleUrls: ['./ux-ui-designs.component.scss']
 })
