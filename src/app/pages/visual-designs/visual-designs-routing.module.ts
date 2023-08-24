@@ -1,7 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { VisualDesignsComponent } from './visual-designs.component';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: VisualDesignsComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

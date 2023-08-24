@@ -92,7 +92,7 @@ body {
     font-family: '45Light', Tahoma, Geneva, Verdana, sans-serif;
 }
   
-@media (min-width: 768px) {
+@media (min-width: 820px) {
     .h-33 {
         height: 33% !important;
     }
@@ -191,4 +191,11 @@ body {
 .fs-neue-75 {
     font-family: '75Bold', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.border-box-8 {
+    border-color: #292929;
+    border-top: solid 1px;
+}
+  
+  
 

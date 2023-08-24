@@ -1,0 +1,26 @@
+.border-box-1 {
+    border-color: #292929;
+    border-right: solid 1px;
+    border-bottom: solid 1px;
+}
+
+.border-box-2 {
+    border-color: #292929;
+    border-left: solid 1px;
+    border-bottom: solid 1px;
+}
+
+@media (max-width: 820px) {
+    .border-box-1 {
+        border-color: #292929;
+        border-right: none;
+        border-bottom: solid 1px;
+    }
+
+    .border-box-2 {
+        border-color: #292929;
+        border-top: solid 1px;
+        border-left: none;
+        border-bottom: solid 1px;
+    }
+}

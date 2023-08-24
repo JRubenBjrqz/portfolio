@@ -1,7 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { UxUiDesignsComponent } from './ux-ui-designs.component';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: UxUiDesignsComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
