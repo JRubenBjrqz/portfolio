@@ -6,11 +6,13 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { UxUiDesignsRoutingModule } from './ux-ui-designs-routing.module';
 
 import { UxUiDesignsComponent } from './ux-ui-designs.component';
+import { TopspinComponent } from './ui/topspin/topspin.component';
 
 
 @NgModule({
   declarations: [
-    UxUiDesignsComponent
+    UxUiDesignsComponent,
+    TopspinComponent
   ],
   imports: [
     CommonModule,
