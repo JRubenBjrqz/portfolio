@@ -135,6 +135,31 @@ body {
     border: solid 1px #FF47A3 !important;
 }
 
+.btn-case-study {
+  color: #292929;
+  background: #FF69B4;
+  border-radius: 0px;
+}
+
+.btn-case-study:hover {
+  color: #292929;
+  background: #FF47A3;
+}
+
+.btn-case-study:focus {
+  color: #292929;
+  background: #FF47A3 !important;
+  border: solid 1px #FF47A3;
+}
+
+.btn-case-study:active {
+  color: #292929;
+  background: #FF47A3 !important;
+  border: solid 1px #FF47A3 !important;
+}
+
+
+
 .bs-icon {
     --bs-icon-size: .75rem;
     flex-shrink: 0;
@@ -172,6 +197,10 @@ body {
     text-align: justify;
 }
 
+.text-pink {
+    color: #FF47A3;
+}  
+
 .fs-neue-45 {
     font-family: '45Light', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -195,6 +224,12 @@ body {
 .border-box-8 {
     border-color: #292929;
     border-top: solid 1px;
+    border-bottom: solid 1px;
+}
+
+.border-box-9 {
+  border-color: #292929;
+  border-top: solid 1px;
 }
   
   
