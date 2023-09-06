@@ -12,10 +12,10 @@ const routes: Routes = [
     path: '',
     children: [
       { path: '', component: UxUiDesignsComponent },
-      { path: 'TopSpinMusic', component: TopspinComponent },
-      { path: 'Dasana', component: DasanaComponent },
-      { path: 'Electium', component: ElectiumComponent },
-      { path: 'UIProjects', component: UiprojectsComponent },
+      { path: 'topspinmusic', component: TopspinComponent },
+      { path: 'dasana', component: DasanaComponent },
+      { path: 'electium', component: ElectiumComponent },
+      { path: 'uiprojects', component: UiprojectsComponent },
     ]
   }
 ];
