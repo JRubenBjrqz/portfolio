@@ -21,7 +21,12 @@ const routes: Routes = [
     path: 'visual',
     loadChildren: () =>
       import('./pages/visual-designs/visual-designs.module').then((m) => m.VisualDesignsModule)
-  }
+  },
+  {
+    path: '**',
+    redirectTo: 'home',
+    pathMatch: 'full',
+  },
 ];
 
 @NgModule({
