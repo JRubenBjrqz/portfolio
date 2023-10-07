@@ -1,244 +1,121 @@
 /* You can add global styles to this file, and also import other style files */
 
+:root {
+    --primary: #F28518;
+    --secondary: #052242;
+    --accent: #ef9025;
+    --background: #09121b;
+    --white: #f1f7fe;
+}
+
+/* GT Super */
 @font-face {
-    font-family: '15XXThin';
-    src: url(assets/fonts/NeueHaasDisplayXXThin.ttf);
+    font-family: 'GT-Book';
+    src: url(assets/fonts/GT/GT-Super-Text-Book-Trial.otf);
 }
 
 @font-face {
-    font-family: '25XThin';
-    src: url(assets/fonts/NeueHaasDisplayXThin.ttf);
+    font-family: 'GT-Regular';
+    src: url(assets/fonts/GT/GT-Super-Text-Regular-Trial.otf);
 }
 
 @font-face {
-    font-family: '35Thin';
-    src: url(assets/fonts/NeueHaasDisplayThin.ttf);
+    font-family: 'GT-Medium';
+    src: url(assets/fonts/GT/GT-Super-Text-Medium-Trial.otf);
 }
 
 @font-face {
-    font-family: '45Light';
-    src: url(assets/fonts/NeueHaasDisplayLight.ttf);
+    font-family: 'GT-Bold';
+    src: url(assets/fonts/GT/GT-Super-Text-Bold-Trial.otf);
 }
 
 @font-face {
-    font-family: '55Roman';
-    src: url(assets/fonts/NeueHaasDisplayRoman.ttf);
+    font-family: 'GT-Black';
+    src: url(assets/fonts/GT/GT-Super-Text-Black-Trial.otf);
+}
+
+/* GT Super Italic */
+@font-face {
+    font-family: 'GT-Book-Italic';
+    src: url(assets/fonts/GT/GT-Super-Text-Book-Italic-Trial.otf);
 }
 
 @font-face {
-    font-family: '65Medium';
-    src: url(assets/fonts/NeueHaasDisplayMediu.ttf);
+    font-family: 'GT-Regular-Italic';
+    src: url(assets/fonts/GT/GT-Super-Text-Regular-Italic-Trial.otf);
 }
 
 @font-face {
-    font-family: '75Bold';
-    src: url(assets/fonts/NeueHaasDisplayBold.ttf);
+    font-family: 'GT-Medium-Italic';
+    src: url(assets/fonts/GT/GT-Super-Text-Medium-Italic-Trial.otf);
 }
 
 @font-face {
-    font-family: '95Black';
-    src: url(assets/fonts/NeueHaasDisplayBlack.ttf);
+    font-family: 'GT-Bold-Italic';
+    src: url(assets/fonts/GT/GT-Super-Text-Bold-Italic-Trial.otf);
 }
 
 @font-face {
-    font-family: '16XXThinItalic';
-    src: url(assets/fonts/NeueHaasDisplayXXThinItalic.ttf);
+    font-family: 'GT-Black-Italic';
+    src: url(assets/fonts/GT/GT-Super-Text-Black-Italic-Trial.otf);
+}
+
+/*Mabry Pro*/
+@font-face {
+    font-family: 'MabryPro-Light';
+    src: url(assets/fonts/Mabry/MabryPro-Light.ttf);
 }
 
 @font-face {
-    font-family: '26XThinItalic';
-    src: url(assets/fonts/NeueHaasDisplayXThinItalic.ttf);
+    font-family: 'MabryPro-Regular';
+    src: url(assets/fonts/Mabry/MabryPro-Regular.ttf);
 }
 
 @font-face {
-    font-family: '36XThinItalic';
-    src: url(assets/fonts/NeueHaasDisplayThinItalic.ttf);
+    font-family: 'MabryPro-Medium';
+    src: url(assets/fonts/Mabry/MabryPro-Medium.ttf);
 }
 
 @font-face {
-    font-family: '46LightItalic';
-    src: url(assets/fonts/NeueHaasDisplayLightItalic.ttf);
+    font-family: 'MabryPro-Bold';
+    src: url(assets/fonts/Mabry/MabryPro-Bold.ttf);
 }
 
 @font-face {
-    font-family: '56RomanItalic';
-    src: url(assets/fonts/NeueHaasDisplayRomanItalic.ttf);
+    font-family: 'MabryPro-Black';
+    src: url(assets/fonts/Mabry/MabryPro-Black.ttf);
+}
+
+/*Mabry Pro Italic*/
+@font-face {
+    font-family: 'MabryPro-Light-Italic';
+    src: url(assets/fonts/Mabry/MabryPro-LightItalic.ttf);
 }
 
 @font-face {
-    font-family: '66MediumItalic';
-    src: url(assets/fonts/NeueHaasDisplayMediumItalic.ttf);
+    font-family: 'MabryPro-Regular-Italic';
+    src: url(assets/fonts/Mabry/MabryPro-Italic.ttf);
 }
 
 @font-face {
-    font-family: '76BoldItalic';
-    src: url(assets/fonts/NeueHaasDisplayBoldItalic.ttf);
+    font-family: 'MabryPro-Medium-Italic';
+    src: url(assets/fonts/Mabry/MabryPro-MediumItalic.ttf);
 }
 
 @font-face {
-    font-family: '96BlackItalic';
-    src: url(assets/fonts/NeueHaasDisplayBlackItalic.ttf);
+    font-family: 'MabryPro-Bold-Italic';
+    src: url(assets/fonts/Mabry/MabryPro-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: 'MabryPro-Black-Italic';
+    src: url(assets/fonts/Mabry/MabryPro-BlackItalic.ttf);
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body {
-    background: #F0F0F0;
-    color: #292929;
-    font-family: '45Light', Tahoma, Geneva, Verdana, sans-serif;
-}
-  
-@media (min-width: 820px) {
-    .h-33 {
-        height: 33% !important;
-    }
-}
-
-.h-34 {
-    height: 34% !important;
-}
-
-.h-67 {
-    height: 67% !important;
-}
-  
-.btn-xs, .btn-group-xs > .btn {
-    --bs-btn-padding-y: 0.2rem;
-    --bs-btn-padding-x: 1rem;
-    --bs-btn-font-size: 0.875rem;
-    --bs-btn-border-radius: 1rem;
-}
-
-.btn-portfolio {
-    color: #292929;
-    background: #FF69B4;
-}
-
-.btn-portfolio:hover {
-    color: #292929;
-    background: #FF47A3;
-}
-
-.btn-portfolio:focus {
-    color: #292929;
-    background: #FF47A3 !important;
-    border: solid 1px #FF47A3;
-}
-
-.btn-portfolio:active {
-    color: #292929;
-    background: #FF47A3;
-    border: solid 1px #FF47A3 !important;
-}
-
-.btn-case-study {
-  color: #292929;
-  background: #FF69B4;
-  border-radius: 0px;
-}
-
-.btn-case-study:hover {
-  color: #292929;
-  background: #FF47A3;
-}
-
-.btn-case-study:focus {
-  color: #292929;
-  background: #FF47A3 !important;
-  border: solid 1px #FF47A3;
-}
-
-.btn-case-study:active {
-  color: #292929;
-  background: #FF47A3 !important;
-  border: solid 1px #FF47A3 !important;
-}
-
-
-
-.bs-icon {
-    --bs-icon-size: .75rem;
-    flex-shrink: 0;
-    font-size: var(--bs-icon-size);
-    width: calc(var(--bs-icon-size)*2);
-    height: calc(var(--bs-icon-size)*2);
-}
-
-.bs-icon.bs-icon-circle {
-    border-radius: 50%;
-}
-  
-.bs-icon-sm {
-    --bs-icon-size: 1rem;
-}
-  
-.bs-icon.bs-icon-portfolio {
-    color: #292929;
-    background: #FF69B4 !important;
-}
-
-.link-portfolio {
-    color: #292929;
-}
-
-.link-portfolio:hover {
-    color: #FF47A3;
-}
-
-.link-portfolio:hover .bs-icon-portfolio {
-    background: #FF47A3;
-}
-
-.align-justify {
-    text-align: justify;
-}
-
-.text-pink {
-    color: #FF47A3;
-}  
-
-.fs-neue-45 {
-    font-family: '45Light', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.fs-neue-55 {
-    font-family: '55Roman', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.fs-neue-65 {
-    font-family: '65Medium', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.fs-neue-66-italic {
-    font-family: '66MediumItalic', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.fs-neue-75 {
-    font-family: '75Bold', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.border-box-8 {
-    border-color: #292929;
-    border-top: solid 1px;
-    border-bottom: solid 1px;
-}
-
-.border-box-9 {
-  border-color: #292929;
-  border-top: solid 1px;
-}
-
-.border-box-10 {
-    border-color: #292929;
-    border-top: solid 2px;
-  }
-
-.lh-portfolio {
-    line-height: 1.75rem;
 }
   
   

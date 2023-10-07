@@ -1,0 +1,22 @@
+.splash-screen {
+    background: var(--background);
+    transition: left 0.5s;
+}
+
+.text-splash-primary {
+    color: var(--primary);
+    font-size: 40px;
+    font-family: 'GT-Medium', Arial, Helvetica, sans-serif;
+}
+
+.text-splash-white {
+    color: var(--white);
+    font-size: 24px;
+    font-family: 'MabryPro-Regular', Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .text-splash-primary {
+        font-size: 32px;
+    }
+}
