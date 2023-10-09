@@ -1,12 +1,21 @@
-<splash-screen></splash-screen>
-<div class="position-relative w-100 h-100 overflow-hidden background-filter">
-    <video autoplay muted loop poster="assets/img/background.png" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
+<!-- <splash-screen></splash-screen> -->
+<div class="position-relative w-100 h-100 overflow-hidden">
+    <video loop muted autoplay oncanplay="this.play()" poster="assets/img/background.png"
+        onloadedmetadata="this.muted = true" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
         <source src="assets/video/background.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-    <div class="content background-filter">
-        <!-- Your content goes here -->
-        <h1>Welcome to My Website</h1>
-        <p>This is some content on top of the video background.</p>
+    <div class="position-absolute w-100 h-100 d-flex flex-column 
+                justify-content-center align-items-center background-filter">
+        <div class="py-hero">
+            <h1 class="text-hero">Hola, my name is
+                <span class="text-hero-name">Rubén Bojórquez</span>.
+            </h1>
+            <h1 class="text-hero">I'm a UX UI Designer and Web Designer.</h1>
+            <h4 class="text-hero-subtitle">Welcome to my project realm! I'm open to work.</h4>
+            <h5 class="text-hero-scroll">Scroll to see my work
+                <i class="bi bi-arrow-right"></i>
+            </h5>
+        </div>
     </div>
 </div>

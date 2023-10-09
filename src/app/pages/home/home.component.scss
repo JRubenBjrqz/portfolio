@@ -2,23 +2,59 @@
     backdrop-filter: blur(10px);
 }
 
-.content {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #fff;
+.py-hero {
+    padding: 0px 110px;
 }
 
-/* Additional styling for your content (e.g., headings, paragraphs, etc.) */
-.content h1 {
-    font-size: 2em;
+.text-hero {
+    font-size: 5rem;
+    color: var(--white);
+    font-family: 'MabryPro-Regular', Arial, Helvetica, sans-serif;
 }
 
-.content p {
-    font-size: 1.2em;
+.text-hero-name {
+    color: var(--primary);
+    font-family: 'GT-Medium', Arial, Helvetica, sans-serif;
+}
+
+.text-hero-subtitle {
+    font-size: 28px;
+    color: var(--white);
+    font-family: 'MabryPro-Regular', Arial, Helvetica, sans-serif;
+    margin-top: 24px;
+}
+
+.text-hero-scroll {
+    font-size: 20px;
+    color: var(--accent);
+    font-family: 'MabryPro-Bold', Arial, Helvetica, sans-serif;
+    margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+    .py-hero {
+        padding: 0px 72px;
+    }
+
+    .text-hero {
+        font-size: 3.5rem;
+    }
+
+    .text-hero-subtitle {
+        font-size: 20px;
+    }
+
+    .text-hero-scroll {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 478px) {
+    .py-hero {
+        padding: 0px 32px;
+    }
+
+    .text-hero {
+        font-size: 2rem;
+    }
 }
