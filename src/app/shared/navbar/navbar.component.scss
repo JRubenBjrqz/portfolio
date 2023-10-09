@@ -27,73 +27,77 @@
   border-right: none;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--primary);
   background: rgba(9, 18, 25, 0.8) ;
 }
 
-.menu {
+.btn-open-menu {
   display:none;
 }
 
-@media screen and (max-width: 800px){
-  .nav-link, .btn {
+.nav-border-bottom .btn-open-menu button{
+  font-size: 40px;
+  color: var(--white);
+  border: none;
+  padding: 8px 16px;
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+@media screen and (max-width: 991px){
+  .nav-link {
       display: none;
   }
-  .menu {
+  .btn-open-menu {
       display: inherit;
   }
 }
 
-.overlay {
-  height: 100%;
+.bg-menu {
   width: 0;
-  position: fixed;
   z-index: 100;
-  left: 0;
-  top: 0;
   background: var(--background);
-  overflow: hidden;
   transition: all 0.3s ease 0s;
 }
 
-.header .overlay .overlay-content{
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;    
-}
-
-.header .overlay a{
-  padding: 15px;
-  font-size: 36px;
-  display: block;
+.nav-mobile-link{
+  font-size: 32px;
+  color: var(--white);
+  font-family: 'MabryPro-Regular', Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  width: 100%;
+  padding: 32px 0px;
   transition: all 0.3s ease 0s;
-  font-weight: 700;
-  color: #eceff1;
 }
 
-.header .overlay a:hover, 
-.header .overlay a:focus{
-    color: #ffbc0e;
+.nav-mobile-link:hover, 
+.nav-mobile-link:focus{
+    color: var(--primary);
+    background: #0f171d;
 }
 
-.header .overlay .close{
+.btn-close-menu{
+  font-size: 40px;
+  padding: 24px 24px;
+  color: var(--white);
   position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 65px;
+  // top: 24px;
+  right: 16px;
+  cursor: pointer;
 }
 
-@media screen and (max-height:450px) {
-  .header .overlay a{
-      font-size: 20px;
+@media screen and (max-height: 450px) {
+  .nav-mobile-link{
+    font-size: 20px;
   }
-  .header .overlay .close{
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
+
+  .btn-close-menu{
+    font-size: 32px;
+    top: 16px;
+    right: 32px;
   }
 }
 

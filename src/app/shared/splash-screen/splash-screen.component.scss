@@ -1,6 +1,6 @@
 .splash-screen {
     background: var(--background);
-    transition: left 0.5s;
+    z-index: 1000;
 }
 
 .text-splash-primary {

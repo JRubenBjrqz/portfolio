@@ -1,23 +1,26 @@
-<header class="w-100 ps-5 d-flex justify-content-between align-items-center position-absolute z-3 nav-border-bottom">
+<header class="w-100 px-4 ps-md-5 pe-lg-0 py-3 py-lg-0 d-flex justify-content-between 
+              align-items-center position-absolute nav-border-bottom z-3">
   <div>
     <h3 class="text-brand">Rubén Bojórquez</h3>
   </div>
-  <nav class="d-flex flex-rows">
-        <a class="nav-link" href="assets/pdf/ResumeRuben Bojorquez.pdf" target="_blank">Resume</a>
-        <a class="nav-link" href="https://www.linkedin.com/in/jrubenbjrqz/" target="_blank">LinkedIn</a>
-        <a class="nav-link" href="mailto:jrubenbjqrz@gmail.com">Contact me</a>
+  <nav class="d-flex flex-row">
+    <a class="nav-link" href="assets/pdf/ResumeRubenBojorquez.pdf" target="_blank">Resume</a>
+    <a class="nav-link" href="https://www.linkedin.com/in/jrubenbjrqz/" target="_blank">LinkedIn</a>
+    <a class="nav-link" href="mailto:jrubenbjqrz@gmail.com">Contact me</a>
   </nav>
-  <a (click)="openNav()" class="menu">
+  <a (click)="openNav()" class="btn-open-menu">
     <button>
       <i class="bi bi-list"></i>
     </button>
   </a>
-  <div id="mobile-menu" class="overlay">
-    <a href="" (click)="closeNav()" class="close">&times;</a>
-    <div class="overlay-content">
-        <a href="">Resume</a>
-        <a href="">LinkedIn</a>
-        <a href="">Contact me</a>
+  <div id="mobileMenu" class="h-100 position-fixed top-0 start-0 overflow-hidden bg-menu">
+    <a (click)="closeNav()" class="btn-close-menu">
+      <i class="bi bi-x-lg"></i>
+    </a>
+    <div class="d-flex flex-column justify-content-center h-100 text-center">
+      <a class="nav-mobile-link" href="assets/pdf/ResumeRubenBojorquez.pdf">Resume</a>
+      <a class="nav-mobile-link" href="https://www.linkedin.com/in/jrubenbjrqz/" target="_blank">LinkedIn</a>
+      <a class="nav-mobile-link" href="mailto:jrubenbjqrz@gmail.com">Contact me</a>
     </div>
   </div>
 </header>

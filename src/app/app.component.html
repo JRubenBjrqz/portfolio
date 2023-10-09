@@ -1,1 +1,10 @@
-<router-outlet></router-outlet>
+<!-- <splash-screen *ngIf="splashScreenService.shouldShow()"></splash-screen> -->
+<navbar></navbar>
+<div class="position-relative w-100 h-100 overflow-hidden">
+    <video loop muted autoplay oncanplay="this.play()" poster="assets/img/background.png"
+        onloadedmetadata="this.muted = true" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
+        <source src="assets/video/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <router-outlet></router-outlet>
+</div>
