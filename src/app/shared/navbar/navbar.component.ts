@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'navbar',
@@ -7,13 +7,22 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  @Input() title: string;
-  @Input() subtitle: string;
-  @Input() section: string;
-
-  constructor() { }
+  constructor(
+    private element: ElementRef,
+  ) { }
 
   ngOnInit(): void {
   }
+
+  openNav() {
+    const mobileMenu = this.element.nativeElement.querySelector('#mobile-menu');
+    mobileMenu.style.width = '100%';
+  }
+
+  closeNav() {
+    const mobileMenu = this.element.nativeElement.querySelector('#mobile-menu');
+    mobileMenu.style.width = '0%';
+  }
+
 
 }

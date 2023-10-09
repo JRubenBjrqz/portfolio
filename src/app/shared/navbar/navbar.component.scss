@@ -1,26 +1,100 @@
-.border-box-1 {
-    border-color: #292929;
-    border-right: solid 1px;
-    border-bottom: solid 1px;
+.nav-border-bottom {
+  border-bottom: 1px solid rgba(241, 247, 254, 0.2);
 }
 
-.border-box-2 {
-    border-color: #292929;
-    border-left: solid 1px;
-    border-bottom: solid 1px;
+.text-brand {
+  font-size: 28px;
+  color: var(--primary);
+  font-family: 'GT-Regular', Arial, Helvetica, sans-serif;
 }
 
-@media (max-width: 820px) {
-    .border-box-1 {
-        border-color: #292929;
-        border-right: none;
-        border-bottom: solid 1px;
-    }
-
-    .border-box-2 {
-        border-color: #292929;
-        border-top: solid 1px;
-        border-left: none;
-        border-bottom: solid 1px;
-    }
+.nav-link {
+  font-size: 20px;
+  color: var(--white);
+  font-family: 'MabryPro-Regular', Arial, Helvetica, sans-serif;
+  padding: 32px 40px;
+  border-left: 1px solid rgba(241, 247, 254, 0.2);
+  border-right: 1px solid rgba(241, 247, 254, 0.2);
 }
+
+.nav-link:first-child {
+  border-left: 1px solid rgba(241, 247, 254, 0.2);
+  border-right: none;
+}
+
+.nav-link:last-child {
+  border-left: none;
+  border-right: none;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+  background: rgba(9, 18, 25, 0.8) ;
+}
+
+.menu {
+  display:none;
+}
+
+@media screen and (max-width: 800px){
+  .nav-link, .btn {
+      display: none;
+  }
+  .menu {
+      display: inherit;
+  }
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  background: var(--background);
+  overflow: hidden;
+  transition: all 0.3s ease 0s;
+}
+
+.header .overlay .overlay-content{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;    
+}
+
+.header .overlay a{
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: all 0.3s ease 0s;
+  font-weight: 700;
+  color: #eceff1;
+}
+
+.header .overlay a:hover, 
+.header .overlay a:focus{
+    color: #ffbc0e;
+}
+
+.header .overlay .close{
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 65px;
+}
+
+@media screen and (max-height:450px) {
+  .header .overlay a{
+      font-size: 20px;
+  }
+  .header .overlay .close{
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+  }
+}
+
+
